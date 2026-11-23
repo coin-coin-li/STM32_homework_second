@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"duoji__test\startup_stm32f103xb.o"
+"duoji__test\main.o"
+"duoji__test\gpio.o"
+"duoji__test\tim.o"
+"duoji__test\stm32f1xx_it.o"
+"duoji__test\stm32f1xx_hal_msp.o"
+"duoji__test\stm32f1xx_hal_gpio_ex.o"
+"duoji__test\stm32f1xx_hal_tim.o"
+"duoji__test\stm32f1xx_hal_tim_ex.o"
+"duoji__test\stm32f1xx_hal.o"
+"duoji__test\stm32f1xx_hal_rcc.o"
+"duoji__test\stm32f1xx_hal_rcc_ex.o"
+"duoji__test\stm32f1xx_hal_gpio.o"
+"duoji__test\stm32f1xx_hal_dma.o"
+"duoji__test\stm32f1xx_hal_cortex.o"
+"duoji__test\stm32f1xx_hal_pwr.o"
+"duoji__test\stm32f1xx_hal_flash.o"
+"duoji__test\stm32f1xx_hal_flash_ex.o"
+"duoji__test\stm32f1xx_hal_exti.o"
+"duoji__test\system_stm32f1xx.o"
+--strict --scatter "duoji__test\duoji__test.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "duoji__test.map" -o duoji__test\duoji__test.axf
